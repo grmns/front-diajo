@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #212529;
+    height: 90px;
+    border-radius: 0 0px 10px 0; /* Bordes redondeados en el lado derecho */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra para el efecto de tarjeta */
+}
+
+.header button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    background-color: #a30101;
+}
+

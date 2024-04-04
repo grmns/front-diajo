@@ -1,0 +1,166 @@
+.ventas-list-container {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ventas-list-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+}
+
+.venta-estado.anulado {
+    color: grey;
+}
+
+.venta-estado.vencido {
+    color: red;
+}
+
+.venta-estado.vigente {
+    color: green;
+}
+
+.venta-estado.cancelado {
+    color: blue;
+}
+
+.fila-anulada {
+    background-color: #f8d7da;
+    /* Color de fondo para filas anuladas */
+    color: #721c24;
+    /* Color de texto para filas anuladas */
+}
+
+
+.filtro-activo {
+    color: #007ad9;
+    /* Cambia al color deseado */
+    background-color: #e0f0ff;
+    /* Cambia al color deseado */
+    border-radius: 50%;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.table-header>* {
+    margin-right: 10px;
+    /* Espacio a la derecha de cada elemento */
+}
+
+.table-header> :last-child {
+    margin-right: 0;
+    /* Remueve el margen del último elemento */
+}
+
+/* Adicionalmente, si deseas que el botón esté más separado del dropdown */
+.table-header .p-dropdown {
+    margin-right: 20px;
+    /* Aumenta el margen a la derecha del dropdown */
+}
+
+/* Centrar contenido de todas las celdas */
+.p-datatable .p-datatable-tbody>tr>td {
+    text-align: center;
+    /* Centra el texto de las celdas */
+    white-space: nowrap;
+    /* Evita que el contenido se divida en varias líneas */
+}
+
+/* Estilo específico para las cabezas de columna con fechas para alinear el icono del filtro */
+.fecha-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fecha-column-header .p-button {
+    border: none;
+    /* Elimina el borde del botón si es necesario */
+    background-color: transparent;
+    /* Hace que el botón sea transparente */
+    color: inherit;
+    /* Usa el color de texto heredado */
+    margin-left: 0.5rem;
+    /* Espaciado entre el texto y el botón del filtro */
+}
+
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* Ajusta el espaciado entre los elementos */
+}
+
+/* Ajustes para el calendario y los iconos de filtro en las columnas de fecha */
+.fecha-column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fecha-column-header .p-button {
+    margin-left: 0.5em;
+    /* Asegura un espacio entre el texto y el ícono del filtro */
+}
+
+/* Ajusta la presentación de las fechas para que no se corten */
+.p-datatable .p-column-title,
+.p-datatable td {
+    white-space: nowrap;
+    /* Evita que el contenido se divida en líneas */
+    text-align: center;
+    /* Centra el contenido */
+}
+
+/* Ajusta el estilo para que el icono del filtro esté a la derecha del texto en las cabeceras */
+.overlay-panel-icon {
+    margin-left: auto;
+}
+
+.ventas-list-container .p-datatable .p-datatable-thead>tr>th,
+.ventas-list-container .p-datatable .p-datatable-tbody>tr>td {
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+
+/* Ajustes adicionales para mejorar la visualización de las fechas y los iconos de filtro */
+.ventas-list-container .fecha-column-header .overlay-panel-icon {
+    margin-left: 0.5em;
+    /* Espaciado entre el texto y el icono */
+}
+
+.ventas-list-container .p-datatable-header,
+.ventas-list-container .p-datatable-footer {
+    justify-content: space-between;
+    /* Asegura que los elementos estén distribuidos uniformemente */
+}
+
+/* Ajustar el margen entre los botones y otros elementos en el encabezado de la tabla */
+.ventas-list-container .table-header>* {
+    margin-right: 1rem;
+    /* Ajusta según sea necesario */
+}
+
+.ventas-list-container .table-header> :last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+}

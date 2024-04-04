@@ -1,0 +1,41 @@
+.sidebar {
+    width: 250px; 
+    background-color: #ffff;
+    position: fixed; /* Cambiado de 'absolute' a 'fixed' para mejor consistencia */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra para el efecto de tarjeta */
+    border-radius: 0 10px 10px 0; /* Bordes redondeados en el lado derecho */
+}
+
+.sidebar-logo {
+    width: 80%; /* Ajusta este valor según tus necesidades */
+    margin: 10px auto; /* Centra el logo y añade espacio alrededor */
+    display: block; /* Asegura que el logo sea un bloque */
+}
+
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Línea entre los elementos */
+    
+
+}
+
+.sidebar a:hover {
+    background-color: #5e6a7550; /* Color al pasar el mouse */
+}
+
+.sidebar a.active {
+    background-color: transparent; /* Remueve el color de fondo para el activo */
+    color: #d9aa00; /* Cambia el color de la letra para el activo */
+}
