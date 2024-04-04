@@ -11,7 +11,6 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import "./App.css";
-import ComprasList from "./components/ComprasList";
 
 export const AuthContext = createContext(null);
 
@@ -82,7 +81,6 @@ function App() {
             <Route path="/verVentas" element={isAuthenticated() ? <VentasList /> : <Navigate to="/login" />} />
             <Route path="/crearVenta" element={isAuthenticated() ? <CrearVenta /> : <Navigate to="/login" />} />
             <Route path="/editarVenta/:id" element={isAuthenticated() ? <EditarVenta /> : <Navigate to="/login" />} />
-            <Route path="/verCompras" element={isAuthenticated() ? <ComprasList /> : <Navigate to="/login" />} />
           </Routes>
         </div>
       </Router>
